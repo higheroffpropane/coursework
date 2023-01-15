@@ -101,7 +101,7 @@
 	                    <img src="Design/images/fast_delivery_img.png" >
 	                    <div class="caption">
 	                        <h3>
-	                            Quality Foods
+	                            Fastest Delivery
 	                        </h3>
 	                        <p>
 	                        	Sit amet, consectetur adipiscing elit quisque eget maximus velit, 
@@ -115,7 +115,7 @@
 	                    <img src="Design/images/original_taste_img.png" >
 	                    <div class="caption">
 	                        <h3>
-	                            Quality Foods
+	                            Original Recipes
 	                        </h3>
 	                        <p>
 	                        	Sit amet, consectetur adipiscing elit quisque eget maximus velit, 
@@ -393,6 +393,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <p></p>
+            <div class="row">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acc2e2124329f443564940462b1aaa955f236e5275710b26f93d3e1df55aba77d&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
         </div>
     </section>
