@@ -1,5 +1,3 @@
-<!-- PHP INCLUDES -->
-
 <?php
     //Set page title
     $pageTitle = 'Order Food';

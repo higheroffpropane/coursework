@@ -26,5 +26,3 @@
     </header>
 
 	<div class="header-height" style="height: 120px;"></div>
-
-    <!-- END NAVBAR SECTION -->

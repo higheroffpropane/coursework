@@ -1,12 +1,9 @@
 <?php
-	
-	//Start session
+
     session_start();
 
-    //Set page title
     $pageTitle = 'Dashboard';
 
-    //PHP INCLUDES
     include 'connect.php';
     include 'Includes/functions/functions.php'; 
     include 'Includes/templates/header.php';

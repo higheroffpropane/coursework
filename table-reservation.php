@@ -1,7 +1,4 @@
-<!-- PHP INCLUDES -->
-
 <?php
-    //Set page title
     $pageTitle = 'Table Reservation';
 
     include "connect.php";
@@ -164,9 +161,7 @@
                         <div class="form-group">
                             <label for="number_of_guests">How many people?</label>
                             <select class="form-control" name="number_of_guests">
-                                <option value="1" <?php echo (isset($_POST['number_of_guests']))?"selected":"";  ?>>
-                                    One person
-                                </option>
+                                <option value="1" <?php echo (isset($_POST['number_of_guests']))?"selected":"";  ?>>One person</option>
                                 <option value="2" <?php echo (isset($_POST['number_of_guests']))?"selected":"";  ?>>Two people</option>
                                 <option value="3" <?php echo (isset($_POST['number_of_guests']))?"selected":"";  ?>>Three people</option>
                                 <option value="4" <?php echo (isset($_POST['number_of_guests']))?"selected":"";  ?>>Four people</option>
@@ -296,46 +291,7 @@
     background-position: 50% 0%;
     background-size: cover;
     color:white !important;
-    min-height: 300px;">
-        <div class="layer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 details_card">
-                        <span>30</span>
-                        <div>
-                            Total
-                            <br>
-                            Reservations
-                        </div>
-                    </div>
-                    <div class="col-md-3 details_card">
-                        <span>30</span>
-                        <div>
-                            Total
-                            <br>
-                            Menus
-                        </div>
-                    </div>
-                    <div class="col-md-3 details_card">
-                        <span>30</span>
-                        <div>
-                            Years of
-                            <br>
-                            Experience
-                        </div>
-                    </div>
-                    <div class="col-md-3 details_card">
-                        <span>30</span>
-                        <div>
-                            Professional
-                            <br>
-                            Cook
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    min-height: 300px;"></section>
 
     <!-- FOOTER BOTTOM  -->
 

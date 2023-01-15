@@ -1,5 +1,3 @@
-<!-- PHP INCLUDES -->
-
 <?php
 
     include "connect.php";
@@ -58,7 +56,7 @@
 						</h2>
 						<hr>
 						<p>
-							Italian Pizza With Cherry Tomatoes and Green Basil  
+							All you`ve ever wanted
 						</p>
 						<div style="display: flex;">
 							<a href="order_food.php" target="_blank" class="bttn_style_1" style="margin-right: 10px; display: flex;justify-content: center;align-items: center;">
@@ -89,10 +87,6 @@
 	                        <h3>
 	                            Quality Foods
 	                        </h3>
-	                        <p>
-	                        	Sit amet, consectetur adipiscing elit quisque eget maximus velit, 
-	                        	non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.
-	                        </p>
 	                    </div>
 	                </div>
 				</div>
@@ -103,10 +97,6 @@
 	                        <h3>
 	                            Fastest Delivery
 	                        </h3>
-	                        <p>
-	                        	Sit amet, consectetur adipiscing elit quisque eget maximus velit, 
-	                        	non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.
-	                        </p>
 	                    </div>
 	                </div>
 				</div>
@@ -117,10 +107,6 @@
 	                        <h3>
 	                            Original Recipes
 	                        </h3>
-	                        <p>
-	                        	Sit amet, consectetur adipiscing elit quisque eget maximus velit, 
-	                        	non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.
-	                        </p>
 	                    </div>
 	                </div>
 				</div>

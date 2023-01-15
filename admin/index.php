@@ -53,13 +53,13 @@
 										{
 											?>
 										<div class="alert alert-danger">
-							<button data-dismiss="alert" class="close close-sm" type="button">
-											<span aria-hidden="true">×</span>
-									</button>
-							<div class="messages">
-								<div>Username and/or password are incorrect!</div>
-							</div>
-						</div>
+                                            <button data-dismiss="alert" class="close close-sm" type="button">
+                                                            <span aria-hidden="true">×</span>
+                                                    </button>
+                                            <div class="messages">
+                                                <div>Username and/or password are incorrect!</div>
+                                            </div>
+                                        </div>
 										<?php 
 									}
 					}
@@ -89,7 +89,7 @@
 
 					<!-- FORGOT PASSWORD PART -->
 
-					<span class="forgotPW">Forgot your password ? <a href="resetPassword.php">Reset it here.</a></span>
+					<span class="forgotPW">Forgot your password ? <a href="#">Reset it here.</a></span>
 
 				</form>
 		</div>

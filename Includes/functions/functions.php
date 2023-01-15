@@ -1,7 +1,4 @@
 <?php
-    /*
-		Title Function That Echo The Page Title In Case The Page Has The Variable $pageTitle And Echo Default Title For Other Pages
-	*/
 	function getTitle()
 	{
 		global $pageTitle;
@@ -11,9 +8,6 @@
 			echo "Vincent Restaurant | Your Restaurant";
 	}
 
-	/*
-		This function returns the number of items in a given table
-	*/
 
     function countItems($item,$table)
 	{
@@ -43,14 +37,6 @@
 		return $count;
 	}
 
-
-  	/*
-    	==============================================
-    	TEST INPUT FUNCTION, IS USED FOR SANITIZING USER INPUTS
-    	AND REMOVE SUSPICIOUS CHARS and Remove Extra Spaces
-    	==============================================
-	
-	*/
 
   	function test_input($data) 
   	{
