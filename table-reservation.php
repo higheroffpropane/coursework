@@ -187,17 +187,12 @@
                     $selected_time = $_POST['reservation_time'];
                     $number_of_guests = $_POST['number_of_guests'];
 
-                    $stmt = $con->prepare("select table_id
-                        from tables
-
-                        where table_id not in (select t.table_id
-                        from tables t, reservations r
-                        where 
+                    $stmt = $con->prepare("SELECT table_id FROM tables WHERE table_id NOT IN 
+                        (SELECT t.table_id FROM tables t, reservations r WHERE 
                         t.table_id = r.table_id
-                        and 
-                        date(r.selected_time) = ?
-                        and liberated = 0
-                        and canceled = 0)
+                        AND DATE(r.selected_time) = ?
+                        AND liberated = 0
+                        AND canceled = 0)
                     ");
 
                     $stmt->execute(array($selected_date));

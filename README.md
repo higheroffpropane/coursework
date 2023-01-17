@@ -105,3 +105,49 @@
     ... ...
 <div id="YMapsID" style="width: 100%; height: 400px;"></div>
 ```
+
+#### Отправка формы обратной связи
+```javascript
+$.ajax({
+    url: "Includes/php-files-ajax/contact.php",
+    type: "POST",
+    data:{contact_name:contact_name, contact_email:contact_email, contact_subject:contact_subject, contact_message:contact_message},
+    success: function (data) 
+    {
+        $('#contact_status_message').html(data);
+    },
+    beforeSend: function()
+    {
+        $('#sending_load').show();
+    },
+    complete: function()
+    {
+        $('#sending_load').hide();
+    },
+    error: function(xhr, status, error) 
+    {
+        alert("Internal ERROR has occured, please, try later!");
+    }
+    });
+```
+
+#### Проверка доступности столиков для бронирования
+```php
+if(isset($_POST['check_availability_submit']))
+{
+    $selected_date = $_POST['reservation_date'];
+    $selected_time = $_POST['reservation_time'];
+    $number_of_guests = $_POST['number_of_guests'];
+
+    $stmt = $con->prepare("SELECT table_id FROM tables WHERE table_id NOT IN 
+        (SELECT t.table_id FROM tables t, reservations r WHERE 
+        t.table_id = r.table_id
+        AND DATE(r.selected_time) = ?
+        AND liberated = 0
+        AND canceled = 0)
+    ");
+
+    $stmt->execute(array($selected_date));
+    $rows = $stmt->fetch();
+... ...
+```
